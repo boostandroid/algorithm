@@ -2,4 +2,9 @@ cc_library_headers {
     name: "libboost_algorithm",
     export_include_dirs: ["include"],
     vendor_available: true,
+    header_libs: [
+        "libboost_iterator",
+        "libboost_range",
+        "libboost_function",
+    ],
 }	
